@@ -1,0 +1,16 @@
+Metric,Value
+Generated mu+,109338.0
+Generated mu-,90662.0
+Top hits mu+,109337.0
+Top hits mu-,90662.0
+Accepted mu+,17220.0
+Accepted mu-,3.0
+Top efficiency mu+,0.9999908540489125
+Top efficiency mu-,1.0
+Acceptance mu+ from generated,0.15749327772595073
+Acceptance mu- from generated,3.308993845271448e-05
+Acceptance mu+ given top,0.1574947181649396
+Acceptance mu- given top,3.308993845271448e-05
+Anti-muon purity,0.999825814318063
+Muon contamination,0.00017418568193694478
+Selection ratio eps+/eps-,4759.595379423251

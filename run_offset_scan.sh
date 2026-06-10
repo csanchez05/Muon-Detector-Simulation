@@ -49,10 +49,10 @@ for OFFSET in "${OFFSETS[@]}"; do
     echo
     echo "Archiving results for offset ${OFFSET} mm..."
     cp "$OUTPUT_DIR/selection_summary.csv" \
-       "$OUTPUT_DIR/selection_summary_comsol_2GeV_offset${OFFSET}mm.csv"
+       "$OUTPUT_DIR/selection_summary_comsol_PL1to20GeV_offset${OFFSET}mm.csv"
 
     cp "$OUTPUT_DIR/accepted_bottom_x_distribution.png" \
-       "$OUTPUT_DIR/accepted_bottom_x_distribution_comsol_2GeV_offset${OFFSET}mm.png"
+       "$OUTPUT_DIR/accepted_bottom_x_distribution_comsol_PL1to20GeV_offset${OFFSET}mm.png"
 
     echo "Finished offset ${OFFSET} mm."
 done
