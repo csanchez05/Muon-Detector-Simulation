@@ -53,7 +53,7 @@ static const G4double kDetectorB_HalfZ = 5.0  * mm;
 // Bottom detector offset relative to where the selected ray would hit with B = 0.
 // Positive value favors mu+ for B along +y and downward tracks.
 // Scan this value: 0, 2, 4, 6, 8, 10, 12, ... mm.
-static const G4double kBottomOffsetFromUnbentX = 22 * mm;
+static const G4double kBottomOffsetFromUnbentX = 14 * mm;
 
 static G4double NominalBottomXNoField() {
     return kSlitCenterX + (kGapTargetX - kSlitCenterX) *

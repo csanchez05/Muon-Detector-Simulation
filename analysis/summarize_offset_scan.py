@@ -4,7 +4,7 @@ import re
 
 output_dir = Path("output")
 
-files = sorted(output_dir.glob("selection_summary_comsol_2GeV_offset*mm.csv"))
+files = sorted(output_dir.glob("selection_summary_comsol_PL1to20GeV_offset*mm.csv"))
 
 if not files:
     raise SystemExit("No scan summary files found.")
