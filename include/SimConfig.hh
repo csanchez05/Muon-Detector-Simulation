@@ -27,9 +27,9 @@ static const G4double kBottomZ = -2.50 * m;  // bottom detector center
 // kGapTargetX/Y: the off-center magnetic-gap region you want the muons to cross.
 // If you want an approximately vertical off-center trajectory, keep these equal.
 // If the slit is physically centered but the gap target is offset, set these differently.
-static const G4double kSlitCenterX = 12.0 * mm;
+static const G4double kSlitCenterX = 15.0 * mm;
 static const G4double kSlitCenterY = 0.0  * mm;
-static const G4double kGapTargetX  = 12.0 * mm;
+static const G4double kGapTargetX  = 15.0 * mm;
 static const G4double kGapTargetY  = 0.0  * mm;
 
 // Virtual slit size used by the biased generator.
@@ -53,7 +53,7 @@ static const G4double kDetectorB_HalfZ = 5.0  * mm;
 // Bottom detector offset relative to where the selected ray would hit with B = 0.
 // Positive value favors mu+ for B along +y and downward tracks.
 // Scan this value: 0, 2, 4, 6, 8, 10, 12, ... mm.
-static const G4double kBottomOffsetFromUnbentX = 8.5 * mm;
+static const G4double kBottomOffsetFromUnbentX = 14 * mm;
 
 static G4double NominalBottomXNoField() {
     return kSlitCenterX + (kGapTargetX - kSlitCenterX) *
@@ -84,7 +84,7 @@ static const G4double kMuPlusFraction = 0.545;
 
 // Start with fixed energy while validating geometry/sign logic.
 // After that, set this false to use the simple power-law sampler below.
-static const G4bool kUseFixedEnergy = true;
+static const G4bool kUseFixedEnergy = false;
 static const G4double kFixedKineticEnergy = 2.0 * GeV;
 static const G4double kEnergyMin = 1.0 * GeV;
 static const G4double kEnergyMax = 20.0 * GeV;

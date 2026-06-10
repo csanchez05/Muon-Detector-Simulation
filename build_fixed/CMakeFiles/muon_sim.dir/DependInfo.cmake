@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/calvi/geant4_workspace/muon_sim/muon_sim.cc" "CMakeFiles/muon_sim.dir/muon_sim.cc.o" "gcc" "CMakeFiles/muon_sim.dir/muon_sim.cc.o.d"
   "/home/calvi/geant4_workspace/muon_sim/src/ActionInitialization.cc" "CMakeFiles/muon_sim.dir/src/ActionInitialization.cc.o" "gcc" "CMakeFiles/muon_sim.dir/src/ActionInitialization.cc.o.d"
+  "/home/calvi/geant4_workspace/muon_sim/src/COMSOLMagneticField.cc" "CMakeFiles/muon_sim.dir/src/COMSOLMagneticField.cc.o" "gcc" "CMakeFiles/muon_sim.dir/src/COMSOLMagneticField.cc.o.d"
   "/home/calvi/geant4_workspace/muon_sim/src/DetectorConstruction.cc" "CMakeFiles/muon_sim.dir/src/DetectorConstruction.cc.o" "gcc" "CMakeFiles/muon_sim.dir/src/DetectorConstruction.cc.o.d"
   "/home/calvi/geant4_workspace/muon_sim/src/DipoleField.cc" "CMakeFiles/muon_sim.dir/src/DipoleField.cc.o" "gcc" "CMakeFiles/muon_sim.dir/src/DipoleField.cc.o.d"
   "/home/calvi/geant4_workspace/muon_sim/src/EventAction.cc" "CMakeFiles/muon_sim.dir/src/EventAction.cc.o" "gcc" "CMakeFiles/muon_sim.dir/src/EventAction.cc.o.d"

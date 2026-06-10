@@ -97,10 +97,24 @@ CMakeFiles/muon_sim.dir/src/ActionInitialization.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/muon_sim.dir/src/ActionInitialization.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/calvi/geant4_workspace/muon_sim/src/ActionInitialization.cc -o CMakeFiles/muon_sim.dir/src/ActionInitialization.cc.s
 
+CMakeFiles/muon_sim.dir/src/COMSOLMagneticField.cc.o: CMakeFiles/muon_sim.dir/flags.make
+CMakeFiles/muon_sim.dir/src/COMSOLMagneticField.cc.o: /home/calvi/geant4_workspace/muon_sim/src/COMSOLMagneticField.cc
+CMakeFiles/muon_sim.dir/src/COMSOLMagneticField.cc.o: CMakeFiles/muon_sim.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/calvi/geant4_workspace/muon_sim/build_fixed/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/muon_sim.dir/src/COMSOLMagneticField.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/muon_sim.dir/src/COMSOLMagneticField.cc.o -MF CMakeFiles/muon_sim.dir/src/COMSOLMagneticField.cc.o.d -o CMakeFiles/muon_sim.dir/src/COMSOLMagneticField.cc.o -c /home/calvi/geant4_workspace/muon_sim/src/COMSOLMagneticField.cc
+
+CMakeFiles/muon_sim.dir/src/COMSOLMagneticField.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/muon_sim.dir/src/COMSOLMagneticField.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/calvi/geant4_workspace/muon_sim/src/COMSOLMagneticField.cc > CMakeFiles/muon_sim.dir/src/COMSOLMagneticField.cc.i
+
+CMakeFiles/muon_sim.dir/src/COMSOLMagneticField.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/muon_sim.dir/src/COMSOLMagneticField.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/calvi/geant4_workspace/muon_sim/src/COMSOLMagneticField.cc -o CMakeFiles/muon_sim.dir/src/COMSOLMagneticField.cc.s
+
 CMakeFiles/muon_sim.dir/src/DetectorConstruction.cc.o: CMakeFiles/muon_sim.dir/flags.make
 CMakeFiles/muon_sim.dir/src/DetectorConstruction.cc.o: /home/calvi/geant4_workspace/muon_sim/src/DetectorConstruction.cc
 CMakeFiles/muon_sim.dir/src/DetectorConstruction.cc.o: CMakeFiles/muon_sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/calvi/geant4_workspace/muon_sim/build_fixed/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/muon_sim.dir/src/DetectorConstruction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/calvi/geant4_workspace/muon_sim/build_fixed/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/muon_sim.dir/src/DetectorConstruction.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/muon_sim.dir/src/DetectorConstruction.cc.o -MF CMakeFiles/muon_sim.dir/src/DetectorConstruction.cc.o.d -o CMakeFiles/muon_sim.dir/src/DetectorConstruction.cc.o -c /home/calvi/geant4_workspace/muon_sim/src/DetectorConstruction.cc
 
 CMakeFiles/muon_sim.dir/src/DetectorConstruction.cc.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/muon_sim.dir/src/DetectorConstruction.cc.s: cmake_force
 CMakeFiles/muon_sim.dir/src/DipoleField.cc.o: CMakeFiles/muon_sim.dir/flags.make
 CMakeFiles/muon_sim.dir/src/DipoleField.cc.o: /home/calvi/geant4_workspace/muon_sim/src/DipoleField.cc
 CMakeFiles/muon_sim.dir/src/DipoleField.cc.o: CMakeFiles/muon_sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/calvi/geant4_workspace/muon_sim/build_fixed/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/muon_sim.dir/src/DipoleField.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/calvi/geant4_workspace/muon_sim/build_fixed/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/muon_sim.dir/src/DipoleField.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/muon_sim.dir/src/DipoleField.cc.o -MF CMakeFiles/muon_sim.dir/src/DipoleField.cc.o.d -o CMakeFiles/muon_sim.dir/src/DipoleField.cc.o -c /home/calvi/geant4_workspace/muon_sim/src/DipoleField.cc
 
 CMakeFiles/muon_sim.dir/src/DipoleField.cc.i: cmake_force
@@ -128,7 +142,7 @@ CMakeFiles/muon_sim.dir/src/DipoleField.cc.s: cmake_force
 CMakeFiles/muon_sim.dir/src/EventAction.cc.o: CMakeFiles/muon_sim.dir/flags.make
 CMakeFiles/muon_sim.dir/src/EventAction.cc.o: /home/calvi/geant4_workspace/muon_sim/src/EventAction.cc
 CMakeFiles/muon_sim.dir/src/EventAction.cc.o: CMakeFiles/muon_sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/calvi/geant4_workspace/muon_sim/build_fixed/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/muon_sim.dir/src/EventAction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/calvi/geant4_workspace/muon_sim/build_fixed/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/muon_sim.dir/src/EventAction.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/muon_sim.dir/src/EventAction.cc.o -MF CMakeFiles/muon_sim.dir/src/EventAction.cc.o.d -o CMakeFiles/muon_sim.dir/src/EventAction.cc.o -c /home/calvi/geant4_workspace/muon_sim/src/EventAction.cc
 
 CMakeFiles/muon_sim.dir/src/EventAction.cc.i: cmake_force
@@ -142,7 +156,7 @@ CMakeFiles/muon_sim.dir/src/EventAction.cc.s: cmake_force
 CMakeFiles/muon_sim.dir/src/PrimaryGeneratorAction.cc.o: CMakeFiles/muon_sim.dir/flags.make
 CMakeFiles/muon_sim.dir/src/PrimaryGeneratorAction.cc.o: /home/calvi/geant4_workspace/muon_sim/src/PrimaryGeneratorAction.cc
 CMakeFiles/muon_sim.dir/src/PrimaryGeneratorAction.cc.o: CMakeFiles/muon_sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/calvi/geant4_workspace/muon_sim/build_fixed/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/muon_sim.dir/src/PrimaryGeneratorAction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/calvi/geant4_workspace/muon_sim/build_fixed/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/muon_sim.dir/src/PrimaryGeneratorAction.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/muon_sim.dir/src/PrimaryGeneratorAction.cc.o -MF CMakeFiles/muon_sim.dir/src/PrimaryGeneratorAction.cc.o.d -o CMakeFiles/muon_sim.dir/src/PrimaryGeneratorAction.cc.o -c /home/calvi/geant4_workspace/muon_sim/src/PrimaryGeneratorAction.cc
 
 CMakeFiles/muon_sim.dir/src/PrimaryGeneratorAction.cc.i: cmake_force
@@ -156,7 +170,7 @@ CMakeFiles/muon_sim.dir/src/PrimaryGeneratorAction.cc.s: cmake_force
 CMakeFiles/muon_sim.dir/src/RunAction.cc.o: CMakeFiles/muon_sim.dir/flags.make
 CMakeFiles/muon_sim.dir/src/RunAction.cc.o: /home/calvi/geant4_workspace/muon_sim/src/RunAction.cc
 CMakeFiles/muon_sim.dir/src/RunAction.cc.o: CMakeFiles/muon_sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/calvi/geant4_workspace/muon_sim/build_fixed/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/muon_sim.dir/src/RunAction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/calvi/geant4_workspace/muon_sim/build_fixed/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/muon_sim.dir/src/RunAction.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/muon_sim.dir/src/RunAction.cc.o -MF CMakeFiles/muon_sim.dir/src/RunAction.cc.o.d -o CMakeFiles/muon_sim.dir/src/RunAction.cc.o -c /home/calvi/geant4_workspace/muon_sim/src/RunAction.cc
 
 CMakeFiles/muon_sim.dir/src/RunAction.cc.i: cmake_force
@@ -170,7 +184,7 @@ CMakeFiles/muon_sim.dir/src/RunAction.cc.s: cmake_force
 CMakeFiles/muon_sim.dir/src/SteppingAction.cc.o: CMakeFiles/muon_sim.dir/flags.make
 CMakeFiles/muon_sim.dir/src/SteppingAction.cc.o: /home/calvi/geant4_workspace/muon_sim/src/SteppingAction.cc
 CMakeFiles/muon_sim.dir/src/SteppingAction.cc.o: CMakeFiles/muon_sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/calvi/geant4_workspace/muon_sim/build_fixed/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/muon_sim.dir/src/SteppingAction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/calvi/geant4_workspace/muon_sim/build_fixed/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/muon_sim.dir/src/SteppingAction.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/muon_sim.dir/src/SteppingAction.cc.o -MF CMakeFiles/muon_sim.dir/src/SteppingAction.cc.o.d -o CMakeFiles/muon_sim.dir/src/SteppingAction.cc.o -c /home/calvi/geant4_workspace/muon_sim/src/SteppingAction.cc
 
 CMakeFiles/muon_sim.dir/src/SteppingAction.cc.i: cmake_force
@@ -185,6 +199,7 @@ CMakeFiles/muon_sim.dir/src/SteppingAction.cc.s: cmake_force
 muon_sim_OBJECTS = \
 "CMakeFiles/muon_sim.dir/muon_sim.cc.o" \
 "CMakeFiles/muon_sim.dir/src/ActionInitialization.cc.o" \
+"CMakeFiles/muon_sim.dir/src/COMSOLMagneticField.cc.o" \
 "CMakeFiles/muon_sim.dir/src/DetectorConstruction.cc.o" \
 "CMakeFiles/muon_sim.dir/src/DipoleField.cc.o" \
 "CMakeFiles/muon_sim.dir/src/EventAction.cc.o" \
@@ -197,6 +212,7 @@ muon_sim_EXTERNAL_OBJECTS =
 
 muon_sim: CMakeFiles/muon_sim.dir/muon_sim.cc.o
 muon_sim: CMakeFiles/muon_sim.dir/src/ActionInitialization.cc.o
+muon_sim: CMakeFiles/muon_sim.dir/src/COMSOLMagneticField.cc.o
 muon_sim: CMakeFiles/muon_sim.dir/src/DetectorConstruction.cc.o
 muon_sim: CMakeFiles/muon_sim.dir/src/DipoleField.cc.o
 muon_sim: CMakeFiles/muon_sim.dir/src/EventAction.cc.o
@@ -251,7 +267,7 @@ muon_sim: /home/calvi/geant4_workspace/geant4-install/lib/libG4global.so
 muon_sim: /home/calvi/geant4_workspace/geant4-install/lib/libG4clhep.so
 muon_sim: /home/calvi/geant4_workspace/geant4-install/lib/libG4ptl.so.2.3.3
 muon_sim: CMakeFiles/muon_sim.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/calvi/geant4_workspace/muon_sim/build_fixed/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable muon_sim"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/calvi/geant4_workspace/muon_sim/build_fixed/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable muon_sim"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/muon_sim.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

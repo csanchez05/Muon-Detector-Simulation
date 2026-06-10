@@ -178,6 +178,30 @@ src/ActionInitialization.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/muon_sim.dir/build.make CMakeFiles/muon_sim.dir/src/ActionInitialization.cc.s
 .PHONY : src/ActionInitialization.cc.s
 
+src/COMSOLMagneticField.o: src/COMSOLMagneticField.cc.o
+.PHONY : src/COMSOLMagneticField.o
+
+# target to build an object file
+src/COMSOLMagneticField.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/muon_sim.dir/build.make CMakeFiles/muon_sim.dir/src/COMSOLMagneticField.cc.o
+.PHONY : src/COMSOLMagneticField.cc.o
+
+src/COMSOLMagneticField.i: src/COMSOLMagneticField.cc.i
+.PHONY : src/COMSOLMagneticField.i
+
+# target to preprocess a source file
+src/COMSOLMagneticField.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/muon_sim.dir/build.make CMakeFiles/muon_sim.dir/src/COMSOLMagneticField.cc.i
+.PHONY : src/COMSOLMagneticField.cc.i
+
+src/COMSOLMagneticField.s: src/COMSOLMagneticField.cc.s
+.PHONY : src/COMSOLMagneticField.s
+
+# target to generate assembly for a file
+src/COMSOLMagneticField.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/muon_sim.dir/build.make CMakeFiles/muon_sim.dir/src/COMSOLMagneticField.cc.s
+.PHONY : src/COMSOLMagneticField.cc.s
+
 src/DetectorConstruction.o: src/DetectorConstruction.cc.o
 .PHONY : src/DetectorConstruction.o
 
@@ -337,6 +361,9 @@ help:
 	@echo "... src/ActionInitialization.o"
 	@echo "... src/ActionInitialization.i"
 	@echo "... src/ActionInitialization.s"
+	@echo "... src/COMSOLMagneticField.o"
+	@echo "... src/COMSOLMagneticField.i"
+	@echo "... src/COMSOLMagneticField.s"
 	@echo "... src/DetectorConstruction.o"
 	@echo "... src/DetectorConstruction.i"
 	@echo "... src/DetectorConstruction.s"

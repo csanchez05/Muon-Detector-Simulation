@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/muon_sim.dir/muon_sim.cc.o.d"
   "CMakeFiles/muon_sim.dir/src/ActionInitialization.cc.o"
   "CMakeFiles/muon_sim.dir/src/ActionInitialization.cc.o.d"
+  "CMakeFiles/muon_sim.dir/src/COMSOLMagneticField.cc.o"
+  "CMakeFiles/muon_sim.dir/src/COMSOLMagneticField.cc.o.d"
   "CMakeFiles/muon_sim.dir/src/DetectorConstruction.cc.o"
   "CMakeFiles/muon_sim.dir/src/DetectorConstruction.cc.o.d"
   "CMakeFiles/muon_sim.dir/src/DipoleField.cc.o"
