@@ -1,7 +1,6 @@
 #include "DetectorConstruction.hh"
-#include "DipoleField.hh"
+#include "COMSOLMagneticField.hh"
 #include "SimConfig.hh"
-
 #include "G4Box.hh"
 #include "G4Colour.hh"
 #include "G4FieldManager.hh"
@@ -13,6 +12,7 @@
 #include "G4TransportationManager.hh"
 #include "G4UserLimits.hh"
 #include "G4VisAttributes.hh"
+#include <string>
 
 DetectorConstruction::DetectorConstruction()
     : G4VUserDetectorConstruction(),
@@ -127,11 +127,13 @@ G4VPhysicalVolume* DetectorConstruction::Construct() {
 }
 
 void DetectorConstruction::ConstructSDandField() {
-    // Toy field only. Replace this with the COMSOL field class next.
-    auto myDipole = new DipoleField(SimConfig::kToyFieldPeakB,
-                                    SimConfig::kToyFieldLengthZ);
+    const std::string fieldFile = "data/comsol/magnetic_grid_g4_2mm.txt";
 
-    auto globalFieldMgr = G4TransportationManager::GetTransportationManager()->GetFieldManager();
-    globalFieldMgr->SetDetectorField(myDipole);
-    globalFieldMgr->CreateChordFinder(myDipole);
+    auto comsolField = new COMSOLMagneticField(fieldFile);
+
+    auto globalFieldMgr =
+        G4TransportationManager::GetTransportationManager()->GetFieldManager();
+
+    globalFieldMgr->SetDetectorField(comsolField);
+    globalFieldMgr->CreateChordFinder(comsolField);
 }
