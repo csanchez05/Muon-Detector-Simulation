@@ -1,7 +1,0 @@
-/run/initialize
-
-# Ignore microscopic garbage particles
-/run/setCut 10 mm
-
-# Fire the primary beam
-/run/beamOn 200000
