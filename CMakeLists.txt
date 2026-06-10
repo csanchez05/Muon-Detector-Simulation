@@ -15,5 +15,8 @@ target_include_directories(muon_sim PRIVATE ${PROJECT_SOURCE_DIR}/include)
 target_link_libraries(muon_sim ${Geant4_LIBRARIES})
 
 # Copy macros to the build directory (we will write init.mac later)
-file(COPY init.mac DESTINATION ${PROJECT_BINARY_DIR} 
-     PATTERN "*.mac")
+file(GLOB MACRO_FILES CONFIGURE_DEPENDS "${PROJECT_SOURCE_DIR}/*.mac")
+
+if(MACRO_FILES)
+    file(COPY ${MACRO_FILES} DESTINATION ${PROJECT_BINARY_DIR})
+endif()

@@ -1,0 +1,3 @@
+/home/calvi/geant4_workspace/muon_sim/build_fixed/CMakeFiles/muon_sim.dir
+/home/calvi/geant4_workspace/muon_sim/build_fixed/CMakeFiles/edit_cache.dir
+/home/calvi/geant4_workspace/muon_sim/build_fixed/CMakeFiles/rebuild_cache.dir

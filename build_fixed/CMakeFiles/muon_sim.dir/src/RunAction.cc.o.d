@@ -1,13 +1,8 @@
-CMakeFiles/muon_sim.dir/src/ActionInitialization.cc.o: \
- /home/calvi/geant4_workspace/muon_sim/src/ActionInitialization.cc \
+CMakeFiles/muon_sim.dir/src/RunAction.cc.o: \
+ /home/calvi/geant4_workspace/muon_sim/src/RunAction.cc \
  /usr/include/stdc-predef.h \
- /home/calvi/geant4_workspace/muon_sim/include/ActionInitialization.hh \
- /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4VUserActionInitialization.hh \
- /home/calvi/geant4_workspace/muon_sim/include/EventAction.hh \
- /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4UserEventAction.hh \
- /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4ThreeVector.hh \
- /home/calvi/geant4_workspace/geant4-install/include/Geant4/globals.hh \
- /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4ios.hh \
+ /home/calvi/geant4_workspace/muon_sim/include/RunAction.hh \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4UserRunAction.hh \
  /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4Types.hh \
  /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4GlobalConfig.hh \
  /usr/include/c++/13/complex \
@@ -184,6 +179,14 @@ CMakeFiles/muon_sim.dir/src/ActionInitialization.cc.o: \
  /usr/include/c++/13/bits/istream.tcc \
  /usr/include/c++/13/bits/sstream.tcc \
  /home/calvi/geant4_workspace/geant4-install/include/Geant4/tls.hh \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4AnalysisManager.hh \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4GenericAnalysisManager.hh \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4ToolsAnalysisManager.hh \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4VAnalysisManager.hh \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4AnalysisManagerState.hh \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4AnalysisVerbose.hh \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/globals.hh \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4ios.hh \
  /usr/include/c++/13/iostream /usr/include/c++/13/algorithm \
  /usr/include/c++/13/bits/stl_algo.h \
  /usr/include/c++/13/bits/algorithmfwd.h \
@@ -229,14 +232,110 @@ CMakeFiles/muon_sim.dir/src/ActionInitialization.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
  /usr/include/c++/13/bits/parse_numbers.h \
  /usr/include/c++/13/bits/std_mutex.h \
- /usr/include/c++/13/bits/unique_lock.h \
+ /usr/include/c++/13/bits/unique_lock.h /usr/include/c++/13/array \
+ /usr/include/c++/13/compare \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4Threading.hh \
+ /usr/include/c++/13/chrono /usr/include/c++/13/condition_variable \
+ /usr/include/c++/13/bits/shared_ptr.h \
+ /usr/include/c++/13/bits/shared_ptr_base.h \
+ /usr/include/c++/13/bits/allocated_ptr.h \
+ /usr/include/c++/13/bits/unique_ptr.h \
+ /usr/include/c++/13/ext/concurrence.h /usr/include/c++/13/future \
+ /usr/include/c++/13/bits/atomic_base.h \
+ /usr/include/c++/13/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/13/bits/atomic_futex.h /usr/include/c++/13/atomic \
+ /usr/include/c++/13/bits/std_function.h \
+ /usr/include/c++/13/bits/std_thread.h /usr/include/c++/13/thread \
+ /usr/include/c++/13/bits/this_thread_sleep.h /usr/include/c++/13/vector \
+ /usr/include/c++/13/bits/stl_uninitialized.h \
+ /usr/include/c++/13/bits/stl_vector.h \
+ /usr/include/c++/13/bits/stl_bvector.h \
+ /usr/include/c++/13/bits/vector.tcc \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4AnalysisUtilities.hh \
+ /usr/include/c++/13/memory \
+ /usr/include/c++/13/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/13/bits/align.h \
+ /usr/include/c++/13/bits/shared_ptr_atomic.h \
+ /usr/include/c++/13/backward/auto_ptr.h \
+ /usr/include/c++/13/pstl/glue_memory_defs.h /usr/include/c++/13/fstream \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
+ /usr/include/c++/13/bits/fstream.tcc \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4VTBaseHnManager.hh \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4HnInformation.hh \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4BinScheme.hh \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4Fcn.hh \
+ /usr/include/c++/13/utility /usr/include/c++/13/bits/stl_relops.h \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4VAnalysisManager.icc \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4HnManager.hh \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4BaseAnalysisManager.hh \
+ /usr/include/c++/13/set /usr/include/c++/13/bits/stl_set.h \
+ /usr/include/c++/13/bits/stl_multiset.h \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4NtupleBookingManager.hh \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/tools/ntuple_booking \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/tools/cids \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/tools/cid \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/tools/typedefs \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/tools/forit \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4NtupleBookingManager.icc \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4VNtupleManager.hh \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4VFileManager.hh \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4BaseFileManager.hh \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4VTHnFileManager.hh \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4TH1ToolsManager.hh \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4THnToolsManager.hh \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4THnManager.hh \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4THnManager.icc \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4AutoLock.hh \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4THnMessenger.hh \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4UImessenger.hh \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4UIdirectory.hh \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4UIcommand.hh \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4ApplicationState.hh \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4ThreeVector.hh \
  /home/calvi/geant4_workspace/geant4-install/include/Geant4/CLHEP/Vector/ThreeVector.h \
  /home/calvi/geant4_workspace/geant4-install/include/Geant4/CLHEP/Utility/defs.h \
  /home/calvi/geant4_workspace/geant4-install/include/Geant4/CLHEP/Vector/ThreeVector.icc \
- /home/calvi/geant4_workspace/geant4-install/include/Geant4/globals.hh \
- /home/calvi/geant4_workspace/muon_sim/include/PrimaryGeneratorAction.hh \
- /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
- /home/calvi/geant4_workspace/muon_sim/include/RunAction.hh \
- /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4UserRunAction.hh \
- /home/calvi/geant4_workspace/muon_sim/include/SteppingAction.hh \
- /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4UserSteppingAction.hh
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4UIparameter.hh \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4UItokenNum.hh \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4THnToolsManager.icc \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4THnMessenger.icc \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4Tokenizer.hh \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4TH2ToolsManager.hh \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4TH3ToolsManager.hh \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4TP1ToolsManager.hh \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4TP2ToolsManager.hh \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/tools/histo/h1d \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/tools/histo/h1 \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/tools/histo/b1 \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/tools/histo/base_histo \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/tools/histo/histo_data \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/tools/histo/axes \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/tools/histo/axis \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/tools/eqT \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/tools/histo/h2d \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/tools/histo/h2 \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/tools/histo/b2 \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/tools/histo/h3d \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/tools/histo/h3 \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/tools/histo/b3 \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/tools/histo/p1d \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/tools/histo/p1 \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/tools/histo/profile_data \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/tools/histo/p2d \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/tools/histo/p2 \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4ToolsAnalysisManager.icc \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4GenericAnalysisManager.icc \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4GenericFileManager.hh \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4GenericFileManager.icc \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4Run.hh \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4Profiler.hh \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4Profiler.icc \
+ /usr/include/c++/13/functional /usr/include/c++/13/unordered_map \
+ /usr/include/c++/13/bits/unordered_map.h \
+ /usr/include/c++/13/bits/hashtable.h \
+ /usr/include/c++/13/bits/hashtable_policy.h \
+ /usr/include/c++/13/bits/enable_special_members.h \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/PTL/Globals.hh \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/PTL/Types.hh \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/PTL/Utility.hh
