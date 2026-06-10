@@ -1,5 +1,6 @@
 #include "RunAction.hh"
-
+#include <sys/stat.h>
+#include <sys/types.h>
 #include "G4AnalysisManager.hh"
 #include "G4Run.hh"
 
@@ -55,6 +56,7 @@ RunAction::~RunAction() {
 
 void RunAction::BeginOfRunAction(const G4Run*) {
     auto analysisManager = G4AnalysisManager::Instance();
+    mkdir("output", 0775);
     analysisManager->OpenFile("muon_selection_data");
 }
 
