@@ -356,4 +356,15 @@ CMakeFiles/muon_sim.dir/src/EventAction.cc.o: \
  /usr/include/c++/13/bits/enable_special_members.h \
  /home/calvi/geant4_workspace/geant4-install/include/Geant4/PTL/Globals.hh \
  /home/calvi/geant4_workspace/geant4-install/include/Geant4/PTL/Types.hh \
- /home/calvi/geant4_workspace/geant4-install/include/Geant4/PTL/Utility.hh
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/PTL/Utility.hh \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4ParticleDefinition.hh \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4PDefManager.hh \
+ /usr/include/c++/13/stdlib.h \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/CLHEP/Units/PhysicalConstants.h \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4ParticleDefinition.icc \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4ParticleTable.hh \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4ParticleDefinition.hh \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4ParticleTableIterator.hh \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4ParticleTable.icc \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4PrimaryParticle.hh \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4PrimaryVertex.hh

@@ -1,4 +1,5 @@
 #include "PrimaryGeneratorAction.hh"
+
 #include "EventAction.hh"
 #include "SimConfig.hh"
 
@@ -19,16 +20,19 @@ G4double Uniform(G4double halfWidth) {
 }
 
 G4double SamplePowerLawEnergy(G4double emin, G4double emax, G4double gamma) {
-    // Samples f(E) ~ E^(-gamma), between emin and emax.
-    // This is a simple design-stage energy sampler, not the final Gaisser model.
     const G4double u = G4UniformRand();
     const G4double a = 1.0 - gamma;
-    return std::pow(std::pow(emin, a) + u * (std::pow(emax, a) - std::pow(emin, a)), 1.0 / a);
+
+    return std::pow(
+        std::pow(emin, a) + u * (std::pow(emax, a) - std::pow(emin, a)),
+        1.0 / a
+    );
 }
 
 G4String ChooseMuonName() {
     if (SimConfig::kForceChargeMode > 0) return "mu+";
     if (SimConfig::kForceChargeMode < 0) return "mu-";
+
     return (G4UniformRand() < SimConfig::kMuPlusFraction) ? "mu+" : "mu-";
 }
 
@@ -51,14 +55,14 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* event) {
 
     const G4double kineticEnergy = SimConfig::kUseFixedEnergy
         ? SimConfig::kFixedKineticEnergy
-        : SamplePowerLawEnergy(SimConfig::kEnergyMin,
-                               SimConfig::kEnergyMax,
-                               SimConfig::kEnergyPowerLawGamma);
+        : SamplePowerLawEnergy(
+            SimConfig::kEnergyMin,
+            SimConfig::kEnergyMax,
+            SimConfig::kEnergyPowerLawGamma
+        );
+
     fParticleGun->SetParticleEnergy(kineticEnergy);
 
-    // Biased slit/gap generator:
-    // Pick a point in the virtual slit/top-detector window, then pick a point in the desired
-    // off-center magnetic-gap window. The ray is forced to pass through both.
     const G4ThreeVector topPoint(
         SimConfig::kSlitCenterX + Uniform(SimConfig::kSlitHalfX),
         SimConfig::kSlitCenterY + Uniform(SimConfig::kSlitHalfY),
@@ -73,8 +77,6 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* event) {
 
     const G4ThreeVector direction = (gapPoint - topPoint).unit();
 
-    // Back-project from the top point to the source plane.
-    // direction.z() is negative, sourceZ > topZ, so t is negative.
     const G4double t = (SimConfig::kSourceZ - SimConfig::kTopZ) / direction.z();
     const G4ThreeVector sourcePosition = topPoint + t * direction;
 
@@ -82,13 +84,14 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* event) {
     fParticleGun->SetParticlePosition(sourcePosition);
 
     if (fEventAction) {
-        fEventAction->SetPrimary(particle->GetPDGEncoding(),
-                                 particle->GetPDGCharge(),
-                                 kineticEnergy,
-                                 sourcePosition,
-                                 direction);
+        fEventAction->SetPrimary(
+            particle->GetPDGEncoding(),
+            particle->GetPDGCharge(),
+            kineticEnergy,
+            sourcePosition,
+            direction
+        );
     }
 
-    // Exactly one primary vertex per event. Do not add a second GeneratePrimaryVertex call.
     fParticleGun->GeneratePrimaryVertex(event);
 }

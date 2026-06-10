@@ -3,6 +3,9 @@ CMakeFiles/muon_sim.dir/src/PrimaryGeneratorAction.cc.o: \
  /usr/include/stdc-predef.h \
  /home/calvi/geant4_workspace/muon_sim/include/PrimaryGeneratorAction.hh \
  /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
+ /home/calvi/geant4_workspace/muon_sim/include/EventAction.hh \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4UserEventAction.hh \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4ThreeVector.hh \
  /home/calvi/geant4_workspace/geant4-install/include/Geant4/globals.hh \
  /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4ios.hh \
  /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4Types.hh \
@@ -227,13 +230,10 @@ CMakeFiles/muon_sim.dir/src/PrimaryGeneratorAction.cc.o: \
  /usr/include/c++/13/bits/parse_numbers.h \
  /usr/include/c++/13/bits/std_mutex.h \
  /usr/include/c++/13/bits/unique_lock.h \
- /home/calvi/geant4_workspace/muon_sim/include/EventAction.hh \
- /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4UserEventAction.hh \
- /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4ThreeVector.hh \
- /home/calvi/geant4_workspace/geant4-install/include/Geant4/globals.hh \
  /home/calvi/geant4_workspace/geant4-install/include/Geant4/CLHEP/Vector/ThreeVector.h \
  /home/calvi/geant4_workspace/geant4-install/include/Geant4/CLHEP/Utility/defs.h \
  /home/calvi/geant4_workspace/geant4-install/include/Geant4/CLHEP/Vector/ThreeVector.icc \
+ /home/calvi/geant4_workspace/geant4-install/include/Geant4/globals.hh \
  /home/calvi/geant4_workspace/muon_sim/include/SimConfig.hh \
  /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4SystemOfUnits.hh \
  /home/calvi/geant4_workspace/geant4-install/include/Geant4/CLHEP/Units/SystemOfUnits.h \

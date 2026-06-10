@@ -1,5 +1,5 @@
-#ifndef SteppingAction_h
-#define SteppingAction_h 1
+#ifndef STEPPING_ACTION_HH
+#define STEPPING_ACTION_HH
 
 #include "G4UserSteppingAction.hh"
 

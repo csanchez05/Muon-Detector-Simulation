@@ -56,8 +56,10 @@ RunAction::~RunAction() {
 
 void RunAction::BeginOfRunAction(const G4Run*) {
     auto analysisManager = G4AnalysisManager::Instance();
+
     mkdir("output", 0775);
-    analysisManager->OpenFile("muon_selection_data");
+
+    analysisManager->OpenFile("output/muon_selection_data");
 }
 
 void RunAction::EndOfRunAction(const G4Run*) {

@@ -1,10 +1,13 @@
 #include "ActionInitialization.hh"
-#include "EventAction.hh"
+
 #include "PrimaryGeneratorAction.hh"
 #include "RunAction.hh"
+#include "EventAction.hh"
 #include "SteppingAction.hh"
 
-ActionInitialization::ActionInitialization() : G4VUserActionInitialization() {}
+ActionInitialization::ActionInitialization()
+    : G4VUserActionInitialization() {}
+
 ActionInitialization::~ActionInitialization() {}
 
 void ActionInitialization::BuildForMaster() const {
@@ -12,11 +15,10 @@ void ActionInitialization::BuildForMaster() const {
 }
 
 void ActionInitialization::Build() const {
-    SetUserAction(new RunAction());
-
     auto eventAction = new EventAction();
-    SetUserAction(eventAction);
 
     SetUserAction(new PrimaryGeneratorAction(eventAction));
+    SetUserAction(new RunAction());
+    SetUserAction(eventAction);
     SetUserAction(new SteppingAction(eventAction));
 }

@@ -132,6 +132,21 @@ schema = df["Schema"].iloc[0]
 print(f"Detected CSV schema: {schema}")
 print(f"Total rows: {len(df)}")
 
+# Use PDG code as the authoritative particle identity.
+# Geant4 convention:
+#   mu- has PDG =  13
+#   mu+ has PDG = -13
+df["PDG"] = df["PDG"].round().astype("Int64")
+
+print("\nPDG counts:")
+print(df["PDG"].value_counts(dropna=False))
+
+print("\nCharge_e counts:")
+print(df["Charge_e"].value_counts(dropna=False).head(20))
+
+df["IsAntiMuon"] = df["PDG"] == -13
+df["IsMuon"] = df["PDG"] == 13
+
 if schema == "old":
     print("\nWARNING:")
     print("You are still analyzing the old 5-column output format.")
@@ -164,8 +179,8 @@ else:
     df["HitB"] = df["HitB"].astype(int)
     df["AcceptedCoincidence"] = df["AcceptedCoincidence"].astype(int)
 
-    plus_all = df[df["Charge_e"] == 1.0]
-    minus_all = df[df["Charge_e"] == -1.0]
+    plus_all = df[df["IsAntiMuon"]]
+    minus_all = df[df["IsMuon"]]
 
     plus_top = plus_all[plus_all["HitA"] == 1]
     minus_top = minus_all[minus_all["HitA"] == 1]
@@ -257,7 +272,7 @@ else:
         ]
     )
 
-    summary.to_csv("selection_summary.csv", index=False)
+    summary.to_csv(OUTPUT_DIR / "selection_summary.csv", index=False)
     print("\nSaved numerical summary to selection_summary.csv")
 
     accepted = df[df["AcceptedCoincidence"] == 1].copy()
@@ -271,8 +286,8 @@ if len(accepted) == 0:
     print("\nNo accepted events to plot.")
     sys.exit(0)
 
-plus_plot = accepted[accepted["Charge_e"] == 1.0]
-minus_plot = accepted[accepted["Charge_e"] == -1.0]
+plus_plot = accepted[accepted["PDG"] == -13]
+minus_plot = accepted[accepted["PDG"] == 13]
 
 plt.figure(figsize=(10, 6))
 
@@ -308,6 +323,6 @@ plt.ylabel("Event count")
 plt.title("Bottom-detector accepted X distribution")
 plt.legend()
 plt.tight_layout()
-plt.savefig("accepted_bottom_x_distribution.png", dpi=300)
+plt.savefig(OUTPUT_DIR / "accepted_bottom_x_distribution.png", dpi=600)
 
-print("Saved plot to accepted_bottom_x_distribution.png")
+print(f"Saved plot to {OUTPUT_DIR / 'accepted_bottom_x_distribution.png'}")
