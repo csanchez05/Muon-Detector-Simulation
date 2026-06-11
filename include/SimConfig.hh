@@ -17,7 +17,7 @@ static const G4double kWorldZHalf  = 3.0 * m;
 
 // ---------- Vertical positions ----------
 static const G4double kSourceZ = 0.75 * m;   // start above top detector / slit
-static const G4double kTopZ    = 0.60 * m;   // top detector center
+static const G4double kTopZ    = 0.10 * m;   // top detector center
 static const G4double kGapZ    = 0.00 * m;   // desired magnetic-gap crossing plane
 static const G4double kBottomZ = -2.50 * m;  // bottom detector center
 
@@ -34,12 +34,12 @@ static const G4double kGapTargetY  = 0.0  * mm;
 
 // Virtual slit size used by the biased generator.
 // This does NOT model absorbing collimator material; it generates only allowed trajectories.
-static const G4double kSlitHalfX = 1.0  * mm;
+static const G4double kSlitHalfX = 5.0  * mm;
 static const G4double kSlitHalfY = 10.0 * mm;
 
 // Target window inside the magnetic gap.
-static const G4double kGapHalfX = 1.0 * mm;
-static const G4double kGapHalfY = 2.5 * mm;
+static const G4double kGapHalfX = 5.0 * mm;
+static const G4double kGapHalfY = 5.0 * mm;
 
 // ---------- Detector dimensions ----------
 static const G4double kDetectorA_HalfX = 5.0  * mm;
