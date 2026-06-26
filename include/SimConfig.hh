@@ -17,9 +17,9 @@ static const G4double kWorldZHalf  = 3.0 * m;
 
 // ---------- Vertical positions ----------
 static const G4double kSourceZ = 0.75 * m;   // start above top detector / slit
-static const G4double kTopZ    = 0.10 * m;   // top detector center
-static const G4double kGapZ    = 0.00 * m;   // desired magnetic-gap crossing plane
-static const G4double kBottomZ = -2.50 * m;  // bottom detector center
+static const G4double kTopZ    = 100.0 * mm;   // top detector center
+static const G4double kGapZ    = 0.0 * mm;   // desired magnetic-gap crossing plane
+static const G4double kBottomZ = -100.0 * mm;  // bottom detector center
 
 // ---------- Slit / selected beamline ----------
 // This is the important part for the countersunk magnet geometry.
@@ -34,26 +34,26 @@ static const G4double kGapTargetY  = 0.0  * mm;
 
 // Virtual slit size used by the biased generator.
 // This does NOT model absorbing collimator material; it generates only allowed trajectories.
-static const G4double kSlitHalfX = 5.0  * mm;
-static const G4double kSlitHalfY = 10.0 * mm;
+static const G4double kSlitHalfX = 2.0 * mm;
+static const G4double kSlitHalfY = 25.0 * mm;
 
 // Target window inside the magnetic gap.
-static const G4double kGapHalfX = 5.0 * mm;
-static const G4double kGapHalfY = 5.0 * mm;
+static const G4double kGapHalfX = 2.0 * mm;
+static const G4double kGapHalfY = 25.0 * mm;
 
 // ---------- Detector dimensions ----------
-static const G4double kDetectorA_HalfX = 5.0  * mm;
+static const G4double kDetectorA_HalfX = 2.0 * mm;
 static const G4double kDetectorA_HalfY = 25.0 * mm;
 static const G4double kDetectorA_HalfZ = 5.0  * mm;
 
-static const G4double kDetectorB_HalfX = 10.0 * mm;
-static const G4double kDetectorB_HalfY = 10.0 * mm;
+static const G4double kDetectorB_HalfX = 25.0 * mm;
+static const G4double kDetectorB_HalfY = 25.0 * mm;
 static const G4double kDetectorB_HalfZ = 5.0  * mm;
 
 // Bottom detector offset relative to where the selected ray would hit with B = 0.
 // Positive value favors mu+ for B along +y and downward tracks.
 // Scan this value: 0, 2, 4, 6, 8, 10, 12, ... mm.
-static const G4double kBottomOffsetFromUnbentX = 22 * mm;
+static const G4double kBottomOffsetFromUnbentX = 29.0 * mm;
 
 static G4double NominalBottomXNoField() {
     return kSlitCenterX + (kGapTargetX - kSlitCenterX) *
@@ -72,9 +72,9 @@ static G4double BottomCenterY() { return NominalBottomYNoField(); }
 // Keep this only until we replace DipoleField with the COMSOL interpolated map.
 static const G4double kToyFieldPeakB = 0.5 * tesla;
 static const G4double kToyFieldLengthZ = 50.8 * mm;
-static const G4double kMagRegionHalfX = 50.0 * cm;
-static const G4double kMagRegionHalfY = 50.0 * cm;
-static const G4double kMagRegionHalfZ = 25.0 * cm;
+static const G4double kMagRegionHalfX = 40.0 * mm;
+static const G4double kMagRegionHalfY = 40.0 * mm;
+static const G4double kMagRegionHalfZ = 80.0 * mm;
 static const G4double kMagStepLimit = 1.0 * mm;
 
 // ---------- Primary generation ----------

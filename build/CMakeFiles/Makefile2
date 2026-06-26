@@ -81,12 +81,12 @@ clean: CMakeFiles/muon_sim.dir/clean
 CMakeFiles/muon_sim.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/muon_sim.dir/build.make CMakeFiles/muon_sim.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/muon_sim.dir/build.make CMakeFiles/muon_sim.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/calvi/geant4_workspace/muon_sim/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target muon_sim"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/calvi/geant4_workspace/muon_sim/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target muon_sim"
 .PHONY : CMakeFiles/muon_sim.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/muon_sim.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/calvi/geant4_workspace/muon_sim/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/calvi/geant4_workspace/muon_sim/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/muon_sim.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/calvi/geant4_workspace/muon_sim/build/CMakeFiles 0
 .PHONY : CMakeFiles/muon_sim.dir/rule
@@ -107,6 +107,7 @@ CMakeFiles/muon_sim.dir/clean:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+	$(CMAKE_COMMAND) -P /home/calvi/geant4_workspace/muon_sim/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -113,6 +113,7 @@ preinstall/fast:
 
 # clear depends
 depend:
+	$(CMAKE_COMMAND) -P /home/calvi/geant4_workspace/muon_sim/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
@@ -177,6 +178,30 @@ src/ActionInitialization.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/muon_sim.dir/build.make CMakeFiles/muon_sim.dir/src/ActionInitialization.cc.s
 .PHONY : src/ActionInitialization.cc.s
 
+src/COMSOLMagneticField.o: src/COMSOLMagneticField.cc.o
+.PHONY : src/COMSOLMagneticField.o
+
+# target to build an object file
+src/COMSOLMagneticField.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/muon_sim.dir/build.make CMakeFiles/muon_sim.dir/src/COMSOLMagneticField.cc.o
+.PHONY : src/COMSOLMagneticField.cc.o
+
+src/COMSOLMagneticField.i: src/COMSOLMagneticField.cc.i
+.PHONY : src/COMSOLMagneticField.i
+
+# target to preprocess a source file
+src/COMSOLMagneticField.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/muon_sim.dir/build.make CMakeFiles/muon_sim.dir/src/COMSOLMagneticField.cc.i
+.PHONY : src/COMSOLMagneticField.cc.i
+
+src/COMSOLMagneticField.s: src/COMSOLMagneticField.cc.s
+.PHONY : src/COMSOLMagneticField.s
+
+# target to generate assembly for a file
+src/COMSOLMagneticField.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/muon_sim.dir/build.make CMakeFiles/muon_sim.dir/src/COMSOLMagneticField.cc.s
+.PHONY : src/COMSOLMagneticField.cc.s
+
 src/DetectorConstruction.o: src/DetectorConstruction.cc.o
 .PHONY : src/DetectorConstruction.o
 
@@ -224,6 +249,30 @@ src/DipoleField.s: src/DipoleField.cc.s
 src/DipoleField.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/muon_sim.dir/build.make CMakeFiles/muon_sim.dir/src/DipoleField.cc.s
 .PHONY : src/DipoleField.cc.s
+
+src/EventAction.o: src/EventAction.cc.o
+.PHONY : src/EventAction.o
+
+# target to build an object file
+src/EventAction.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/muon_sim.dir/build.make CMakeFiles/muon_sim.dir/src/EventAction.cc.o
+.PHONY : src/EventAction.cc.o
+
+src/EventAction.i: src/EventAction.cc.i
+.PHONY : src/EventAction.i
+
+# target to preprocess a source file
+src/EventAction.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/muon_sim.dir/build.make CMakeFiles/muon_sim.dir/src/EventAction.cc.i
+.PHONY : src/EventAction.cc.i
+
+src/EventAction.s: src/EventAction.cc.s
+.PHONY : src/EventAction.s
+
+# target to generate assembly for a file
+src/EventAction.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/muon_sim.dir/build.make CMakeFiles/muon_sim.dir/src/EventAction.cc.s
+.PHONY : src/EventAction.cc.s
 
 src/PrimaryGeneratorAction.o: src/PrimaryGeneratorAction.cc.o
 .PHONY : src/PrimaryGeneratorAction.o
@@ -312,12 +361,18 @@ help:
 	@echo "... src/ActionInitialization.o"
 	@echo "... src/ActionInitialization.i"
 	@echo "... src/ActionInitialization.s"
+	@echo "... src/COMSOLMagneticField.o"
+	@echo "... src/COMSOLMagneticField.i"
+	@echo "... src/COMSOLMagneticField.s"
 	@echo "... src/DetectorConstruction.o"
 	@echo "... src/DetectorConstruction.i"
 	@echo "... src/DetectorConstruction.s"
 	@echo "... src/DipoleField.o"
 	@echo "... src/DipoleField.i"
 	@echo "... src/DipoleField.s"
+	@echo "... src/EventAction.o"
+	@echo "... src/EventAction.i"
+	@echo "... src/EventAction.s"
 	@echo "... src/PrimaryGeneratorAction.o"
 	@echo "... src/PrimaryGeneratorAction.i"
 	@echo "... src/PrimaryGeneratorAction.s"
@@ -338,6 +393,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+	$(CMAKE_COMMAND) -P /home/calvi/geant4_workspace/muon_sim/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

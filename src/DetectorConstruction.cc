@@ -114,7 +114,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct() {
     logicDetA->SetVisAttributes(detVis);
     logicDetB->SetVisAttributes(detVis);
 
-    auto magVis = new G4VisAttributes(G4Colour(0.2, 0.2, 1.0, 0.08));
+    auto magVis = new G4VisAttributes(G4Colour(1.0, 1.0, 1.0, 0.75));
     magVis->SetForceWireframe(true);
     fLogicMag->SetVisAttributes(magVis);
 

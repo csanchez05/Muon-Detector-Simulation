@@ -232,13 +232,14 @@ CMakeFiles/muon_sim.dir/src/DetectorConstruction.cc.o: \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
  /home/calvi/geant4_workspace/geant4-install/include/Geant4/globals.hh \
- /home/calvi/geant4_workspace/muon_sim/include/DipoleField.hh \
+ /home/calvi/geant4_workspace/muon_sim/include/COMSOLMagneticField.hh \
  /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4MagneticField.hh \
  /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4Field.hh \
  /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4ThreeVector.hh \
  /home/calvi/geant4_workspace/geant4-install/include/Geant4/CLHEP/Vector/ThreeVector.h \
  /home/calvi/geant4_workspace/geant4-install/include/Geant4/CLHEP/Utility/defs.h \
  /home/calvi/geant4_workspace/geant4-install/include/Geant4/CLHEP/Vector/ThreeVector.icc \
+ /usr/include/c++/13/array /usr/include/c++/13/compare \
  /home/calvi/geant4_workspace/muon_sim/include/SimConfig.hh \
  /home/calvi/geant4_workspace/geant4-install/include/Geant4/G4SystemOfUnits.hh \
  /home/calvi/geant4_workspace/geant4-install/include/Geant4/CLHEP/Units/SystemOfUnits.h \

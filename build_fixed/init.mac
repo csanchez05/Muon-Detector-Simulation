@@ -30,4 +30,4 @@
 /vis/scene/endOfEventAction accumulate
 
 # Generate the first 25 cosmic events through the collimator
-/run/beamOn 100
+/run/beamOn 15
